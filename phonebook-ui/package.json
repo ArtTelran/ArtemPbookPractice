@@ -8,8 +8,8 @@
     "test:watch": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-   // "build:ci": "npm run clean && npm run test && npm run build:prod"
-    "build:ci": "ng build --prod --sourceMap=false --base-href /ArtemPbookPractice/" 
+  
+    "build:ci": "ng build --prod --sourceMap=false --base-href /ArtemPbookPractice/",
     "test:ci": "ng test --watch=false --code-coverage --source-map true" 
   },
   "private": true,
