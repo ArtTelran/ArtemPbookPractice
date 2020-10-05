@@ -1,4 +1,4 @@
-name: karmaV1
+name: KarmaV1
 on:
   push:
      branches: [ master ]
