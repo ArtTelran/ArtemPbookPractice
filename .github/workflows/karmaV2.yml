@@ -1,4 +1,4 @@
-name: Run Karma Tests
+name: karmaV2
 on:
   pull_request:
     branches: [ master ]
