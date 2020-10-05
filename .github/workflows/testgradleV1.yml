@@ -21,3 +21,7 @@ jobs:
         
       - name: Test with gradle
         run: ./gradlew :phonebook-ui:npm_run_build
+      - name: Test NG with gradle
+        run: ./gradlew :phonebook-ui:ng_serve
+        
+        
