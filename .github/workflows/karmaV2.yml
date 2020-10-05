@@ -1,9 +1,8 @@
 name: karmaV2
 
 on: 
-  push:
-    branches: 
-      - master
+ pull_request:
+    branches: [ master ]
   
 jobs:
   ubuntu-build:
