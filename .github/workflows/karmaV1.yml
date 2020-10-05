@@ -1,4 +1,4 @@
-name: Build
+name: karmaV1
 on:
   push:
      branches: [ main ]
