@@ -1,4 +1,4 @@
-name: TestGradle
+name: TestGradleV1
 
 on:
   push:
