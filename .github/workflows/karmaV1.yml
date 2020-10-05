@@ -26,6 +26,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm ci and npm run build
         run: |
+          
           npm init
-          npm ci
-          npm run build:ci
+          npm install
+          npm run build
+        #  npm ci
+         # npm run build:ci
