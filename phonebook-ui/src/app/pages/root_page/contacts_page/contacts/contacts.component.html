@@ -1,0 +1,17 @@
+<div class="card-header bg-secondary text-white rounded">
+  <b>My profile</b>
+</div>
+
+<div class="list-group" *ngIf="profile" id="profile">
+  <app-contact-item [contactItem]="profile"></app-contact-item>
+</div>
+
+<div class="card-header bg-secondary text-white rounded">
+  <b>Contacts list</b>
+</div>
+
+<div *ngIf="contacts">
+  <div class="list-group" *ngFor="let contact of contacts" id="contacts-list">
+    <app-contact-item [contactItem]="contact"></app-contact-item>
+  </div>
+</div>
