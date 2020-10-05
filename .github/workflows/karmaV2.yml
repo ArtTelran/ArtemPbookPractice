@@ -1,4 +1,4 @@
-name: karmaV2
+name: KarmaV2
 
 on: 
  pull_request:
