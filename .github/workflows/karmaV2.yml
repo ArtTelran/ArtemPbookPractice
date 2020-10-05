@@ -2,7 +2,7 @@ name: KarmaV2
 
 on: 
  pull_request:
-    branches: [ main ]
+    branches: [ master ]
   
 jobs:
   ubuntu-build:
