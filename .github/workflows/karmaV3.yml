@@ -1,6 +1,6 @@
 name: KarmaV3
 on:
-  pull_request:
+  push:
     branches: [ main ]
 
 jobs:
