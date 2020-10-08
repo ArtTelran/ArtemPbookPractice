@@ -1,7 +1,7 @@
 name: karmav1
 on:
-
-  push:
+ pull_request:
+  #push:
     branches:
     - main    
 
