@@ -14,7 +14,7 @@ jobs:
     - uses: actions/cache@v1
       id: cache
       with:
-        path: "./ArtemPbookPractice/phonebook-ui/package.json"
+        path: "/ArtemPbookPractice/phonebook-ui/package.json"
         key: ${{ runner.os }}-npm-${{ hashFiles('/ArtemPbookPractice/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-npm-
