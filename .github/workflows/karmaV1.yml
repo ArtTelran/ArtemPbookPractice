@@ -20,8 +20,11 @@ jobs:
           ${{ runner.os }}-npm-
     - name: npm install, build, and test
       run: |
+       with:
+        path: "/ArtemPbookPractice/phonebook-ui/package.json"
        npm cache clean --force
         npm install
+        
        
         npm update
        
