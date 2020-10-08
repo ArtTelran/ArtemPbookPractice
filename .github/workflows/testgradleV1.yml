@@ -18,8 +18,8 @@ jobs:
           java-version: 11
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-      - name: Grant execute permission for node_modules
-        run: chmod -R 777 ./node_modules 
+  # - name: Grant execute permission for node_modules
+  #      run: chmod -R 777 ./node_modules 
         
       - name: Test with gradle
         run: ./gradlew :phonebook-ui:npm_run_build
