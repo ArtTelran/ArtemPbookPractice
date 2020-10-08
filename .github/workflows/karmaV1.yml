@@ -24,8 +24,7 @@ jobs:
         npm install
        
         npm update
-        npm cache clean --force
-        npm install
+       
         npm run build
         npm test
         env:
