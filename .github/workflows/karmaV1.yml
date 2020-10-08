@@ -21,6 +21,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
+        npm install bootstrap
         npm update
         npm run bootstrap
         npm run build
