@@ -18,15 +18,11 @@ jobs:
         key: ${{ runner.os }}-npm-${{ hashFiles('/ArtemPbookPractice/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-npm-
-    - name: Install dependencies
-      if: steps.cache.outputs.cache-hit != 'true'
-      run: npm ci
-
-    - name: Unit Test
-      run: npm test
-
-    - name: Local action test
-      uses: ./
-      id: version
-
-    
+    - name: npm install, build, and test
+      run: |
+        npm install
+        npm run bootstrap
+        npm run build
+        npm test
+        env:
+        CI: true
