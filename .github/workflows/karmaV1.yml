@@ -19,16 +19,17 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-npm-
     - name: npm install, build, and test
-      run: |
-       with:
+      with:
         path: "/ArtemPbookPractice/phonebook-ui/package.json"
-       npm cache clean --force
-        npm install
+        run: |
+      
+          npm cache clean --force
+          npm install
         
        
-        npm update
+          npm update
        
-        npm run build
-        npm test
-        env:
-        CI: true
+          npm run build
+          npm test
+    env:
+      CI: true
