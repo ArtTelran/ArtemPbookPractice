@@ -19,7 +19,7 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Grant execute permission for node_modules
-        run: chmod -R a+rwx ./node_modules 
+        run: chmod +x ./node_modules 
         
       - name: Test with gradle
         run: ./gradlew :phonebook-ui:npm_run_build
